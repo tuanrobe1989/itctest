@@ -5,6 +5,7 @@ ITC Test
 docker compose up -d
 
 2. Import Database:
+http://localhost:8080
 database.sql
 
 3. Noted: Please help me enter in host file

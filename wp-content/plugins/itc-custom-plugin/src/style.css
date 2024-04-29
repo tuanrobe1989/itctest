@@ -1,0 +1,138 @@
+.filterControl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 !important;
+}
+.filterControl .components-base-control__field {
+  margin: 0;
+}
+.filterControl input[type="text"],
+.filterControl select {
+  width: 100% !important;
+  border-radius: 5px !important;
+  padding: 0.5rem 1rem !important;
+  border: 1px solid !important;
+  height: auto !important;
+  overflow: hidden !important;
+  background: none !important;
+}
+.filterControl__item {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.filterControl__item--submit button {
+  width: 100% !important;
+  background: blue;
+  display: block;
+  border: 1px solid gray;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 10px;
+}
+.filterControl__item--tags {
+  width: 100%;
+}
+.filterControl__item--tags svg {
+  display: none;
+}
+
+.filterControl--tit {
+  width: 100%;
+  display: block;
+  font-size: 0.8rem;
+}
+
+.filterControl__tags {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.filterBlock {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px dashed;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+.filterBlock__thumb {
+  margin: 0;
+  width: 100%;
+  display: block;
+}
+.filterBlock__thumb img {
+  box-sizing: border-box;
+  display: block;
+  border: 1px solid;
+  padding: 0.4rem;
+  border-radius: 10px;
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+.filterPagination {
+  display: flex;
+  gap: 1rem;
+  border-top: 1px dashed;
+  padding-top: 2rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.filterPagination button {
+  display: block;
+  padding: 0.5rem;
+  width: 32px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.filterBlock__content--tit{
+  color: blue;
+}
+.filterBlock__content--des{
+  margin: 0;
+  font-size: 1rem;
+}
+.w100 {
+  width: 100%;
+}
+
+@media only screen and (min-width: 567px) {
+  .filterControl__item {
+    width: auto;
+  }
+  .filterControl__item--keyword,
+  .filterControl__item--categories {
+    width: calc(50% - 80px);
+    box-sizing: border-box;
+    padding: 0;
+  }
+  .filterControl__item--keyword {
+    padding-right: 0.5rem;
+  }
+  .filterControl__item--categories {
+    padding-left: 0.5rem;
+  }
+  .filterControl__item--submit {
+    width: 160px !important;
+    padding-left: 20px;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    align-self: flex-end;
+  }
+  .filterControl__item--tags {
+    order: 4;
+  }
+  .filterControl--tit .filterControl__item--submit {
+    order: 3;
+  }
+
+  .filterBlock {
+    flex-wrap: nowrap;
+  }
+
+  .filterBlock__thumb {
+    width: 150px !important;
+  }
+}

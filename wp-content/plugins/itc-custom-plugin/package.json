@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@wordpress/scripts": "^27.7.0"
+  },
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "dependencies": {
+    "react-hook-form": "^7.51.3"
+  }
+}
